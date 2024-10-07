@@ -1,0 +1,44 @@
+
+
+.badge {
+    position: absolute;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+    background-color: #b94517; /* Badge color */
+    width:   20px;
+    height: 20px;   /* Padding for the badge */
+    border-radius: 100%; /* Rounded corners */
+    /* Space between button and badge */
+     top: -5px;
+     right: -10px;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+    color: white; /* Text color for the badge */
+}
+
+.button:hover .badge,
+.button:active .badge {
+    background-color: #92320c; /* Darker badge color on hover/active */
+}
+
+.bump {
+    animation: bump 300ms ease-out; /* Bump animation on certain interactions */
+}
+
+@keyframes bump {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(0.9);
+    }
+    30% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
